@@ -1,0 +1,80 @@
+$green: #1FBD8A ;
+$blue: #192F44 ;
+$white: #ffffff ;
+$fontFamily: 'Roboto', sans-serif ;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+}
+
+body{
+    background-color: $blue;
+
+}
+.login-div{
+    width: 450px;
+    height: 500px;
+    background-color: $green;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 10px 30px 50px rgb(32, 31, 31);
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.logo{
+    width: 190px;
+    height: 50px;
+}
+.username,
+.password{
+    width: 320px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 25px;
+    box-shadow: 10px 10px 10px rgba(59, 59, 59, 0.415);
+}
+.username{
+    margin-top: 25px;
+    
+}
+.forgot-pass{
+    font-size: 13px;
+    color: $blue;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.log-btn{
+    width: 320px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    background-color: $blue;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.log-btn:hover{
+    background-color: #ffffff;
+    color: $blue;
+}
+.usereror{
+    font-size: 13px;
+    color: $blue;
+    margin-top: 5px;
+
+}
+.hidden{
+    display: none;
+}
