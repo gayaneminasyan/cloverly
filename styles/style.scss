@@ -11,7 +11,11 @@ $fontFamily: 'Roboto', sans-serif ;
     text-decoration: none;
     box-sizing: border-box;
 }
-
+@media  only screen and (max-width: 1400px){
+    body{
+        position:  absolute;
+    }
+}
 header{
     background-color: $green;
     width: 100%;
@@ -69,6 +73,7 @@ button{
 
 .headerr{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     padding-left: 170px;
     
@@ -128,8 +133,8 @@ button{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
     margin-left: 45px;
     margin-top: 35px;
 }
@@ -144,6 +149,28 @@ button{
 }
 .img4{
     grid-area: 2 / 2 / 4 / 3; 
+}
+
+@media only screen and (max-width:1200px) {
+    .header-content-bac{
+        position: absolute;
+        z-index: -1;
+    }
+    .partners-photo{
+        max-width: 800px;
+
+    }
+   
+    .headerr{
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    header{
+       text-align: center;
+    
+    }
+    
 }
 /*Partners side*/
 .partners{
