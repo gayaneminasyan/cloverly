@@ -12,6 +12,10 @@ header {
   width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Navbar styles */
 .nav {
   background-color: #1FBD8A;
